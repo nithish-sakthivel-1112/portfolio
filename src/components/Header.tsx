@@ -33,12 +33,12 @@ const Header: React.FC = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {['about', 'skills', 'projects', 'experience', 'contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 capitalize font-medium"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 capitalize font-medium text-sm xl:text-base"
               >
                 {item}
               </button>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2 z-50 relative"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -56,13 +56,13 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-4">
+          <nav className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg border-t mt-0 py-4 px-6">
+            <div className="flex flex-col space-y-3">
               {['about', 'skills', 'projects', 'experience', 'contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-200 capitalize font-medium py-2"
+                  className="text-left text-gray-700 hover:text-blue-600 transition-colors duration-200 capitalize font-medium py-2 text-lg"
                 >
                   {item}
                 </button>
