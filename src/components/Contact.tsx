@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
               Get In Touch
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Let's discuss how we can work together to build amazing cloud solutions. 
+              Let's discuss how we can work together to build amazing cloud solutions.
               I'm always open to new opportunities and exciting projects.
             </p>
           </div>
@@ -45,10 +45,10 @@ const Contact: React.FC = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Let's Start a Conversation
               </h3>
-              
+
               <p className="text-gray-600 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
-                I'm passionate about AWS cloud technologies and love working on infrastructure automation projects. 
-                Whether you need cloud migration consultation, infrastructure design, or DevOps implementation, 
+                I'm passionate about AWS cloud technologies and love working on infrastructure automation projects.
+                Whether you need cloud migration consultation, infrastructure design, or DevOps implementation,
                 I'm here to help optimize your cloud journey.
               </p>
 
@@ -88,23 +88,17 @@ const Contact: React.FC = () => {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-3 sm:mb-4 text-sm sm:text-base">Connect with me</h4>
                 <div className="flex gap-4">
-                  <a 
-                    href="#" 
+                  <a
+                    href="www.linkedin.com/in/nithishsakthivel2029"
                     className="bg-gray-100 hover:bg-blue-600 hover:text-white text-gray-600 p-2 sm:p-3 rounded-full transition-all duration-200 transform hover:scale-110"
                   >
                     <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
                   </a>
-                  <a 
-                    href="#" 
+                  <a
+                    href="https://github.com/nithish-sakthivel-1112"
                     className="bg-gray-100 hover:bg-gray-900 hover:text-white text-gray-600 p-2 sm:p-3 rounded-full transition-all duration-200 transform hover:scale-110"
                   >
                     <Github className="h-4 w-4 sm:h-5 sm:w-5" />
-                  </a>
-                  <a 
-                    href="#" 
-                    className="bg-gray-100 hover:bg-blue-400 hover:text-white text-gray-600 p-2 sm:p-3 rounded-full transition-all duration-200 transform hover:scale-110"
-                  >
-                    <Twitter className="h-4 w-4 sm:h-5 sm:w-5" />
                   </a>
                 </div>
               </div>
@@ -128,7 +122,7 @@ const Contact: React.FC = () => {
                       placeholder="Your full name"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Email
