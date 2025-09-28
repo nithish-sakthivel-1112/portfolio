@@ -1,13 +1,529 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nithish Sakthivel - Cloud Engineer Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-cloud"></i>
+                <span>Nithish Sakthivel</span>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Nithish Sakthivel
+                    <span class="hero-subtitle">AWS Cloud Engineer</span>
+                </h1>
+                <p class="hero-description">
+                    AWS Certified Solutions Architect specializing in cloud migration, 
+                    infrastructure automation, and DevOps implementation
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Cost Reduction Achieved</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Application Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>AWS Certified Solutions Architect with expertise in cloud migration, infrastructure automation, 
+                and DevOps implementation. Currently working at Hapag Lloyd Technology Center.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Modernizing Infrastructure with AWS Cloud Solutions</h3>
+                    <p>With 3+ years of experience in cloud engineering and middleware systems, I specialize in 
+                    modernizing legacy applications and building scalable AWS infrastructure. My expertise 
+                    includes Terraform automation, GitLab CI/CD pipelines, and container orchestration.</p>
+                    <p>Currently at Hapag Lloyd, I've successfully migrated legacy applications to cloud 
+                    environments, reducing costs by 40% while maintaining 99% uptime. I'm passionate about 
+                    infrastructure automation, observability, and creating technical content to help others 
+                    learn cloud technologies.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon blue">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Infrastructure</h4>
+                            <p>AWS & Terraform</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon green">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Security</h4>
+                            <p>IAM & VPC</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon yellow">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h4>Performance</h4>
+                            <p>CI/CD & Monitoring</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-card">
+                        <img src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cloud infrastructure">
+                        <div class="image-stats">
+                            <div class="image-stat">
+                                <div class="stat-value blue">15+</div>
+                                <div class="stat-text">AWS Services</div>
+                            </div>
+                            <div class="image-stat">
+                                <div class="stat-value green">20+</div>
+                                <div class="stat-text">Microservices</div>
+                            </div>
+                            <div class="image-stat">
+                                <div class="stat-value purple">60%</div>
+                                <div class="stat-text">Automation Gain</div>
+                            </div>
+                            <div class="image-stat">
+                                <div class="stat-value orange">99.9%</div>
+                                <div class="stat-text">Server Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Comprehensive expertise across cloud platforms, DevOps tools, and modern technologies 
+                to deliver robust and scalable solutions.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon blue">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>AWS Cloud Services</h3>
+                    <div class="skill-tags">
+                        <span class="tag">EC2</span>
+                        <span class="tag">ECS</span>
+                        <span class="tag">EKS</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">EFS</span>
+                        <span class="tag">RDS</span>
+                        <span class="tag">VPC</span>
+                        <span class="tag">IAM</span>
+                        <span class="tag">CloudWatch</span>
+                        <span class="tag">DataSync</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon green">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">GitLab CI/CD</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">ArgoCD</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon purple">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Operating Systems</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Windows</span>
+                        <span class="tag">Server Administration</span>
+                        <span class="tag">System Monitoring</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon red">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Programming & Scripting</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Shell Scripting</span>
+                        <span class="tag">Infrastructure Automation</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon yellow">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Monitoring & Logging</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Grafana</span>
+                        <span class="tag">CloudWatch</span>
+                        <span class="tag">Application Monitoring</span>
+                        <span class="tag">Incident Resolution</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon indigo">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Middleware & Legacy Systems</h3>
+                    <div class="skill-tags">
+                        <span class="tag">WebSphere</span>
+                        <span class="tag">IBM MQ 9.1</span>
+                        <span class="tag">Message Queues</span>
+                        <span class="tag">Legacy Migration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Showcasing cloud infrastructure projects that deliver scalable, secure, 
+                and cost-effective solutions for enterprise environments.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Serverless Email Notification System">
+                        <div class="project-icon blue">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Serverless Email Notification System</h3>
+                        <p>Built an event-driven serverless architecture integrated with CRICAPI to send real-time cricket match notifications via email/SMS every 30 minutes.</p>
+                        <div class="project-tags">
+                            <span class="tag">AWS Lambda</span>
+                            <span class="tag">SNS</span>
+                            <span class="tag">EventBridge</span>
+                            <span class="tag">IAM</span>
+                            <span class="tag">Serverless</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800" alt="3-Tier AWS Architecture">
+                        <div class="project-icon green">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>3-Tier AWS Architecture</h3>
+                        <p>Designed secure infrastructure with least privilege access controls, separating presentation, application, and database layers following AWS best practices.</p>
+                        <div class="project-tags">
+                            <span class="tag">VPC</span>
+                            <span class="tag">EC2</span>
+                            <span class="tag">Auto Scaling</span>
+                            <span class="tag">Load Balancer</span>
+                            <span class="tag">NAT Gateway</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Legacy Application Migration">
+                        <div class="project-icon yellow">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Legacy Application Migration</h3>
+                        <p>Modernized and migrated legacy applications to AWS cloud environments, achieving 40% cost reduction and 99% uptime with automated CI/CD pipelines.</p>
+                        <div class="project-tags">
+                            <span class="tag">AWS Migration</span>
+                            <span class="tag">GitLab CI/CD</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">Cost Optimization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <p>A track record of delivering innovative cloud solutions and leading 
+                infrastructure transformations across diverse industries.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Technical Support - AWS</h3>
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                Apr 2024 - Present
+                            </div>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Hapag Lloyd Technology Center</span>
+                            <span>•</span>
+                            <span>Chennai, IN</span>
+                        </div>
+                        <p>Leading cloud migration initiatives and infrastructure automation projects, focusing on modernizing legacy systems while ensuring high availability and cost efficiency.</p>
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Successfully migrated legacy applications to AWS cloud environments, achieving 40% cost reduction while maintaining 99% uptime</li>
+                            <li>Designed and implemented GitLab CI/CD pipelines for automated deployments, patching, and workload maintenance, reducing manual intervention by 60%</li>
+                            <li>Automated infrastructure provisioning using Terraform with GitLab CI/CD integration for consistent deployments</li>
+                            <li>Built comprehensive Grafana dashboards for 20+ microservice applications, improving observability and reducing incident resolution time</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Technical Support (Middleware)</h3>
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                Mar 2022 - Mar 2024
+                            </div>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Solverminds Solutions and Technology</span>
+                            <span>•</span>
+                            <span>Chennai, IN</span>
+                        </div>
+                        <p>Managed enterprise middleware systems and Linux server infrastructure, ensuring reliable message processing and maintaining high system availability across production environments.</p>
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Administered middleware systems including WebSphere and IBM MQ 9.1, ensuring reliable message transfers through custom queue configurations</li>
+                            <li>Managed 15+ Linux servers with responsibilities including disk space management, patching, and uptime monitoring, achieving 99.9% availability</li>
+                            <li>Resolved critical P1/P2 incidents within SLA requirements by analyzing domain, server, and security logs for root cause identification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss how we can work together to build amazing cloud solutions.
+                I'm always open to new opportunities and exciting projects.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Start a Conversation</h3>
+                    <p>I'm passionate about AWS cloud technologies and love working on infrastructure automation projects.
+                    Whether you need cloud migration consultation, infrastructure design, or DevOps implementation,
+                    I'm here to help optimize your cloud journey.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon blue">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>nithishs1112@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon green">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 8220766134</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon purple">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chennai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Connect with me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/nithishsakthivel2029" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/nithish-sakthivel-1112" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-cloud"></i>
+                        <span>Nithish Sakthivel</span>
+                    </div>
+                    <p>AWS Certified Solutions Architect passionate about cloud migration, 
+                    infrastructure automation, and helping organizations modernize their technology stack.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Expertise</h4>
+                    <ul>
+                        <li>AWS Cloud Migration</li>
+                        <li>Infrastructure Automation</li>
+                        <li>CI/CD Pipeline Development</li>
+                        <li>Middleware Systems</li>
+                        <li>Cost Optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>© 2025 Nithish Sakthivel. Made with</span>
+                    <i class="fas fa-heart"></i>
+                    <span>and passion for cloud technology</span>
+                </div>
+                <div class="footer-certification">
+                    <span>AWS Certified Solutions Architect - Associate (SAA-C03)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
